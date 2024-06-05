@@ -1,0 +1,27 @@
+.navbar {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #d9d8d8;
+    color: #fff;
+    font-family: 'Calibri', 'Raleway', sans-serif;
+}
+
+.navElem:hover {
+    background-color: #c0c0c0;
+}
+
+.navElem{
+    flex: 1;
+    text-align: center;
+    padding-top: 8px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+

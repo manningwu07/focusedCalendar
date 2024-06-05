@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Productivity Pal",
+  "author": "manningwu123@gmail.com",
+  "version": "1.0",
+  "description": "The antidote to procrastination. Get stuff done distraction-free. The best way to optimize productivity.",
+  "permissions": [
+    "identity",
+    "storage",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "js/content.js"
+      ]
+    }
+  ],
+  "oauth2": {
+    "client_id": "redacted",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar.events.readonly"
+    ]
+  },
+  "key": "redacted",
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "action": {
+    "default_popup": "block.html",
+    "default_icon": {
+      "48": "images/icon48.png",
+      "128": "images/icon128.png",
+      "512": "images/icon512.png"
+    }
+  },
+  "icons": {
+    "48": "images/icon48.png",
+    "128": "images/icon128.png",
+    "512": "images/icon512.png"
+  }
+}

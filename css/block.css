@@ -1,0 +1,307 @@
+html {
+    width: 360px;
+    height: 240px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Calibri', 'Raleway', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.container {}
+
+/* Block page css*/
+#space-div {
+    margin-top: 42px;
+}
+
+.hide {
+    display: none;
+}
+
+.button {
+    margin: 10px 60px;
+    text-align: center;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 100px;
+    background-color: #53d81ef2;
+    font-size: 1.25em;
+    width: 220px;
+}
+
+.button:hover {
+    background-color: #41b31493;
+}
+
+.button.mousedown {
+    background-color: rgb(0, 170, 0);
+}
+
+#post {
+    text-align: center;
+    font-size: 1.25em;
+    padding: 5px 10px;
+    margin: 0 auto;
+    overflow: auto;
+    max-height: 100px;
+}
+
+
+.blocked-website {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.blocked-website:hover {
+    background-color: #f0f0f0;
+}
+
+.blocked-website .domain {
+    flex-grow: 1;
+}
+
+.trash-icon {
+    cursor: pointer;
+}
+
+
+
+
+
+/* Focus page css*/
+
+.left-side-focus {
+    margin: 0;
+    width: 15em;
+    display: flex;
+    overflow-y: scroll;
+    background-color: #aaaaaa;
+}
+
+.right-side-focus {
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+    margin: 0;
+}
+
+#google-schedule-focus,
+#current-event-focus,
+#restricted-tabs-focus {
+    padding: 10px;
+}
+
+#google-schedule-focus {
+    width: 100%;
+}
+
+#current-event-focus {
+    background-color: #e0f7fa;
+    height: 100px;
+}
+
+#restricted-tabs-focus {
+    background-color: #f8bbd0;
+    height: 100%;
+}
+
+.title-focus,
+.refresh-button {
+    display: inline-block;
+    padding: 5px;
+}
+
+.event-focus {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    color: #fcfcfc;
+}
+
+.current-event-focus {
+    /* Add special effect styles for the current event */
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+.event-time-focus {
+    margin-top: 5px;
+}
+
+#event-summary-focus,
+#calendar-focus {
+    text-align: center;
+}
+
+#search-bar-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#search-bar-focus {
+  width: calc(100% - 10px); /* Adjust width to fit within the container */
+  margin-top: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#block-website-button-focus {
+    width: 50px;
+    /* Adjust width as needed */
+}
+
+#blocked-websites-container {
+    margin-top: 10px;
+}
+
+.switch-container {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    margin-right: 5px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 17px;
+    transition: background-color 0.3s;
+}
+
+.switch label:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.switch input:checked+label {
+    background-color: #2196F3;
+}
+
+.switch input:checked+label:before {
+    transform: translateX(13px);
+}
+
+.switch label:active:before {
+    width: 15px;
+}
+
+/* Add styles for when the switch is on */
+.switch-on label {
+    background-color: #2196F3;
+}
+
+.switch-on label:before {
+    transform: translateX(13px);
+}
+
+.switch-on label:active:before {
+    width: 15px;
+}
+
+
+.help-button {
+    padding: 4px 6px;
+    /* Adjusted padding */
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* Insights page css*/.left-side-insight {
+    margin: 0;
+    width: 13em;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #000000; /* Adding a border for visual separation */
+}
+
+.right-side-insight {
+    display: flex;
+    flex-direction: column;
+    width: 17em;
+    margin: 0;
+    align-items: center;
+}
+
+.insights-title {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button-insight {
+    flex: 1;
+    background-color: #53d81ef2;
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 4px 0px;
+    font-size: 12px;
+}
+
+.button-insight:hover {
+    background-color: #41b31493;
+}
+
+.website-list {
+    width: 100%;
+}
+
+.website-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc; /* Adding a separator between items */
+}
+
+.website-domain {
+    flex: 1;
+}
+
+.website-time {
+    flex: 1;
+    text-align: right;
+}

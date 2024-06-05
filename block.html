@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="./css/block.css" rel="stylesheet">
+  <link href="./css/nav.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navElem" id="block">Block Sites</div>
+    <div class="navElem" id="focus">Focus</div>
+  </nav>
+  <div id="space-div"></div>
+  <div class="container">
+    <div id="block-button" class="button">Block this site</div>
+    <div id="edit-button" class="button">Edit blocklist</div>
+    <div id="post"></div>
+  </div>
+
+  <script src="./js/common.js"></script>
+  <script src="./js/block.js"></script>
+  <!-- Focus JS (Mainly using OAuth2 to grab google calendar API which is why I named it that way)-->
+  <script src="./js/Oauth2.js"></script>
+  <script src = "./js/insights.js"></script>
+
+</body>
+
+</html>
